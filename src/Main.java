@@ -1,5 +1,12 @@
+import core.logger.*;
+import core.*;
+
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world");
+
+        View view = new View(new LoggerTxt("log.txt"));
+        view.run();
+
     }
 }
